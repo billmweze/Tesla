@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla - Le Génie de l'Électricité</title>
+    <style>
+        /* Styles généraux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        
+        /* Barre de navigation */
+        header {
+            background-color: #000;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #222;
+            padding: 10px;
+            margin-top: 60px;
+            position: sticky;
+            top: 50px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #ffcc00;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        /* Galerie d'images */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Découvertes */
+        .discovery {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .discovery p {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        /* Vidéos */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>Tesla</header>
+
+<nav>
+    <a href="#photos">Photos</a>
+    <a href="#decouvertes">Découvertes</a>
+    <a href="#videos">Vidéos</a>
+</nav>
+
+<section id="photos">
+    <h2>Photos de Nikola Tesla</h2>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/N.Tesla.JPG/250px-N.Tesla.JPG" alt="Tesla">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/N.Tesla.JPG/800px-N.Tesla.JPG" alt="Tesla">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tesla_bulb.jpg/800px-Tesla_bulb.jpg" alt="Tesla avec une ampoule">
+    </div>
+</section>
+
+<section id="decouvertes">
+    <h2>Les Grandes Inventions de Tesla</h2>
+    <div class="discovery">
+        <p>Courant Alternatif – Il a développé le système de distribution d'électricité moderne.</p>
+        <p>Télécommande Sans Fil – Le principe de toutes les télécommandes modernes.</p>
+        <p>Bobine de Tesla – Une invention spectaculaire générant des éclairs artificiels.</p>
+        <p>Radio – Tesla a posé les bases de la transmission radio.</p>
+        <p>Énergie Sans Fil – Un concept visionnaire jamais achevé.</p>
+    </div>
+</section>
+
+<section id="videos">
+    <h2>🎥 Vidéos sur Nikola Tesla</h2>
+    <div class="video-container">
+        <iframe src="https://youtu.be/eIL1FzmwVxc?si=zOAV0ARYO1LW08hC" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/07oZKpvBZL4?si=pp7m0kZXzWT9eySf" allowfullscreen></iframe>
+    </div>
+</section>
+
+</body>
+</html>
